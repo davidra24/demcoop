@@ -1,9 +1,22 @@
 import { registerBlockType } from '@wordpress/blocks';
+import { BallInformation } from './ballInformation/BallInformation';
 
 registerBlockType('demc/register', {
-	title: 'Register',
+	title: 'Demcoop',
 	categoty: 'widgets',
 	icon: 'admin-users',
-	edit: () => <h2>Hola mundo</h2>,
-	save: () => <h2>Hola mundo</h2>
+	attributes: {
+		title: {
+			source: 'html',
+			selector: 'p',
+			dafault: ''
+		},
+		image: {
+			utl: ''
+		},
+		link: {
+			url: ''
+		}
+	},
+	BallInformation: () => <BallInformation />
 });

@@ -1,0 +1,32 @@
+.container__services-main {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.container-rounded__services {
+	width: 320px;
+	height: 320px;
+	border: 2px solid #161815;
+	border-radius: 50%;
+	background-color: #161815;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
+}
+
+@media (min-width: 1024px) {
+	.container-rounded__services {
+		position: relative;
+		top: 150px;
+	}
+}
+
+.container-rounded__services .title-rounded__element {
+	color: #74a321;
+	font-family: 'Open Sans';
+	font-size: 24;
+}

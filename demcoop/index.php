@@ -10,8 +10,17 @@
             $assets_file['dependencies'],
             $assets_file['version']
         );
+        
+        wp_register_style(
+            'demc-registrer-block',
+            plugins_url('./build/index.css', __FILE__),
+            array(),
+            $assets_file['version']
+        )
 
-        register_block_type('demc/register', array('editor_script' => 'demc-registrer-block'));
+        register_block_type('demc/register', 
+        array('editor_script' => 'demc-registrer-block',
+              'style' => 'demc-registrer-block'));
 
     }
 ?>

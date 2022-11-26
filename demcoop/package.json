@@ -4,6 +4,7 @@
 	"main": "index.js",
 	"license": "MIT",
 	"dependencies": {
+		"@wordpress/block-editor": "^10.5.0",
 		"@wordpress/scripts": "^24.6.0"
 	},
 	"scripts": {
